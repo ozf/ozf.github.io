@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ozf</title>
+  <link rel="stylesheet" href="./style.css">
+<style>
+  body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.word-cloud {
+  text-align: center;
+  line-height: 2;
+  transform: rotate(-5deg);
+}
+
+.word-cloud span {
+  display: inline-block;
+  margin: 5px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.word-cloud span:hover {
+  transform: scale(1.1);
+}
+
+.webdev, .devops, .cloud { font-size: 20px; }
+.seo, .http, .docker, .git { font-size: 16px; }
+.servers, .cicd, .security, .kubernetes { font-size: 14px; }
+.javascript, .react, .nodejs, .aws, .azure, .sql, .nosql, .python, .linux { font-size: 18px; }
+
+.webdev { transform: rotate(-10deg); }
+.seo { transform: rotate(5deg); }
+.http { transform: rotate(-8deg); }
+.cicd { transform: rotate(10deg); }
+.security { transform: rotate(-4deg); }
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="word-cloud">
+  <span class="webdev">Web Development</span>
+  <span class="seo">SEO</span>
+  <span class="servers">Servers</span>
+  <span class="http">HTTP</span>
+  <span class="devops">DevOps</span>
+  <span class="cicd">CI/CD</span>
+  <span class="security">Security</span>
+  <span class="cloud">Cloud Computing</span>
+  <span class="docker">Docker</span>
+  <span class="kubernetes">Kubernetes</span>
+  <span class="git">Git</span>
+  <span class="javascript">JavaScript</span>
+  <span class="react">React</span>
+  <span class="nodejs">Node.js</span>
+  <span class="aws">AWS</span>
+  <span class="azure">Azure</span>
+  <span class="sql">SQL</span>
+  <span class="nosql">NoSQL</span>
+  <span class="python">Python</span>
+  <span class="linux">Linux</span>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
